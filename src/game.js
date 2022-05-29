@@ -60,6 +60,27 @@ export default class Game {
     }
   }
 
+  rotatePiece() {
+    const blocks = this.activePiece.blocks;
+    const length = blocks.length;
+    const temp = [];
+
+    for (let i = 0; i < length; i++) {
+      temp[i] = new Array(length).fill(0);
+    }
+
+    for (let y = 0; y < length; y++) {
+      for (let x = 0; x < length; x++) {
+        temp[x][y] = blocks[length - 1 - y][x];
+      }
+    }
+
+    this.activePiece.blocks = temp;
+    if (this.hasCollision()) {
+      this.activePiece.blocks = blocks;
+    }
+  }
+
   hasCollision() {
     const { y: pieceY, x: pieceX, blocks } = this.activePiece;
 
