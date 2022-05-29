@@ -2,3 +2,65 @@ body {
   margin: 0;
   background-image: url(./images/back.png);
 }
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.peijer {
+  margin-top: 100px;
+  height: 750px;
+  position: relative;
+}
+
+.buttonUP {
+  position: absolute;
+  height: 235px;
+  top: 260px;
+  right: 425px;
+  cursor: pointer;
+}
+.buttonDOWN {
+  position: absolute;
+  height: 235px;
+  top: 490px;
+  right: 425px;
+  cursor: pointer;
+}
+
+.buttonLEFT {
+  position: absolute;
+  height: 35px;
+  width: 250px;
+  top: 766px;
+  left: 590px;
+  cursor: pointer;
+}
+.buttonPause {
+  position: absolute;
+  height: 35px;
+  width: 250px;
+  top: 766px;
+  left: 850px;
+  cursor: pointer;
+}
+.buttonRIGHT {
+  position: absolute;
+  height: 35px;
+  width: 250px;
+  top: 766px;
+  right: 690px;
+  cursor: pointer;
+}
+
+.buttonStop {
+  position: absolute;
+  height: 35px;
+  width: 100px;
+  top: 766px;
+  right: 589px;
+  cursor: pointer;
+}
