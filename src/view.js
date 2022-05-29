@@ -33,18 +33,24 @@ export default class View {
         const block = line[x];
 
         if (block) {
-          this.context.fillStyle = 'red';
-          this.context.strokeStyle = 'black';
-          this.context.lineWidth = 2;
-
-          this.context.fillRect(
+          this.renderBlock(
             x * this.blockWidth,
             y * this.blockHeight,
             this.blockWidth,
-            this.blockHeight
+            this.blockHeight,
+            'red'
           );
         }
       }
     }
+  }
+
+  renderBlock(x, y, width, height, color) {
+    this.context.fillStyle = color;
+    this.context.strokeStyle = 'black';
+    this.context.lineWidth = 2;
+
+    this.context.fillRect(x, y, width, height);
+    this.context.strokeRect(x, y, width, height);
   }
 }
