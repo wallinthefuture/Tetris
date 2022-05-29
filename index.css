@@ -15,6 +15,7 @@ body {
 .peijer {
   margin-top: 50px;
   height: 650px;
+  width: 1155px;
   position: relative;
 }
 
@@ -70,4 +71,12 @@ body {
   right: 25rem;
 
   cursor: pointer;
+}
+
+.canvas {
+  position: absolute;
+  border-radius: 66px;
+  top: 178px;
+  right: 24.8rem;
+  background: #000;
 }
