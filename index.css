@@ -1,66 +1,73 @@
 body {
   margin: 0;
   background-image: url(./images/back.png);
+  max-width: 1519px;
+  max-height: 700px;
 }
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
 .peijer {
-  margin-top: 100px;
-  height: 750px;
+  margin-top: 50px;
+  height: 650px;
   position: relative;
 }
 
 .buttonUP {
   position: absolute;
-  height: 235px;
-  top: 260px;
-  right: 425px;
+  height: 200px;
+  top: 200px;
+  right: 260px;
+
   cursor: pointer;
 }
 .buttonDOWN {
   position: absolute;
-  height: 235px;
-  top: 490px;
-  right: 425px;
+  height: 200px;
+  top: 390px;
+  right: 260px;
   cursor: pointer;
 }
 
 .buttonLEFT {
   position: absolute;
   height: 35px;
-  width: 250px;
-  top: 766px;
-  left: 590px;
+  width: 220px;
+  top: 627px;
+  left: 23.5rem;
+
   cursor: pointer;
 }
 .buttonPause {
   position: absolute;
   height: 35px;
-  width: 250px;
-  top: 766px;
-  left: 850px;
+  width: 220px;
+  top: 627px;
+  left: 38rem;
+
   cursor: pointer;
 }
 .buttonRIGHT {
   position: absolute;
   height: 35px;
-  width: 250px;
-  top: 766px;
-  right: 690px;
+  width: 220px;
+  top: 627px;
+  right: 30rem;
+
   cursor: pointer;
 }
 
 .buttonStop {
   position: absolute;
   height: 35px;
-  width: 100px;
-  top: 766px;
-  right: 589px;
+  width: 70px;
+  top: 627px;
+  right: 25rem;
+
   cursor: pointer;
 }
