@@ -41,10 +41,72 @@ export default class View {
     this.element.appendChild(this.canvas);
   }
 
-  render(state) {
+  renderMainScreen(state) {
     this.clearScreen();
     this.renderPlayField(state);
     this.renderPanel(state);
+  }
+
+  renderStartScreen() {
+    this.context.fillStyle = 'white';
+    this.context.font = '18px "Press Start 2P"';
+    this.context.textAlign = 'center';
+    this.context.textBaseline = 'middle';
+    this.context.fillText(
+      'Press ENTER to Start',
+      this.playfieldWidth / 2,
+      this.playfieldHeight / 2
+    );
+  }
+
+  renderPauseScreen() {
+    this.context.fillStyle = 'rgba(0,0,0,0.75)';
+    this.context.fillRect(
+      2,
+      this.panelUpHeight - 29,
+      this.playfieldWidth,
+      this.playfieldHeight
+    );
+
+    this.context.fill();
+    this.context.fillStyle = 'white';
+    this.context.font = '18px "Press Start 2P"';
+    this.context.textAlign = 'center';
+    this.context.textBaseline = 'middle';
+    this.context.fillText(
+      'Press ENTER to Resume',
+      this.playfieldWidth / 2,
+      this.playfieldHeight / 2
+    );
+  }
+
+  renderEndScreen({ score }) {
+    const button = document.querySelector('.button');
+    this.clearScreen();
+    this.context.fillStyle = 'rgba(0,0,0,0.75)';
+    this.context.fillRect(
+      2,
+      this.panelUpHeight - 29,
+      this.playfieldWidth,
+      this.playfieldHeight
+    );
+
+    this.context.fill();
+    this.context.fillStyle = 'white';
+    this.context.font = '18px "Press Start 2P"';
+    this.context.textAlign = 'center';
+    this.context.textBaseline = 'middle';
+    this.context.fillText(
+      'Game Over',
+      this.playfieldWidth / 2,
+      this.playfieldHeight / 2
+    );
+    this.context.fillText(
+      `Score: ${score}`,
+      this.playfieldWidth / 2,
+      this.playfieldHeight / 2 + 48
+    );
+    button.classList.add('active');
   }
 
   clearScreen() {

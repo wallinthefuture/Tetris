@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 body {
   margin: 0;
   background-image: url(./images/back.png);
@@ -78,5 +79,30 @@ body {
   border-radius: 66px;
   top: 58px;
   right: 19.2rem;
+  z-index: 0;
   /* background: #000; */
+}
+
+.button {
+  font-family: 'Press Start 2P', sans-serif;
+
+  content: '';
+  position: absolute;
+  display: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid azure;
+
+  padding: 20px;
+  top: 350px;
+  z-index: 1;
+}
+.button:hover {
+  transition: 0.7s;
+  background-color: black;
+}
+
+.active {
+  display: block;
 }

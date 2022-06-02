@@ -32,5 +32,3 @@ document.addEventListener('keydown', (event) => {
       break;
   }
 });
-
-view.render(game.getState());
