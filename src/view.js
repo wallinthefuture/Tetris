@@ -106,6 +106,11 @@ export default class View {
       this.playfieldWidth / 2,
       this.playfieldHeight / 2 + 48
     );
+    this.context.fillText(
+      'Press ENTER to Restart',
+      this.playfieldWidth / 2,
+      this.playfieldHeight / 2 + 98
+    );
     button.classList.add('active');
   }
 
