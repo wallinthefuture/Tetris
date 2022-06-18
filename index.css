@@ -2,100 +2,99 @@
 body {
   margin: 0;
   background-image: url(./images/back.png);
-  max-width: 1519px;
-  max-height: 700px;
+
+  /* max-width: 1519px; */
+  /* max-height: 700px; */
 }
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
+  height: 100vh;
+  /* max-width: 900px; */
+  /* margin: 0 auto; */
 }
 
 .peijer {
-  margin-top: 50px;
-  height: 650px;
-  width: 1155px;
+  height: 92%;
+  width: 80%;
   position: relative;
 }
 
 .buttonUP {
   position: absolute;
-  height: 200px;
-  top: 200px;
-  right: 260px;
-
+  height: 26%;
+  top: 25%;
+  right: 14.5%;
   cursor: pointer;
 }
 .buttonDOWN {
   position: absolute;
-  height: 200px;
-  top: 390px;
-  right: 260px;
+  height: 26%;
+  top: 52%;
+  right: 14.5%;
   cursor: pointer;
 }
 
 .buttonLEFT {
   position: absolute;
-  height: 35px;
-  width: 220px;
-  top: 627px;
-  left: 23.5rem;
-
+  height: 4.5%;
+  width: 14.5%;
+  top: 85.5%;
+  left: 24%;
   cursor: pointer;
 }
 .buttonPause {
   position: absolute;
-  height: 35px;
-  width: 220px;
-  top: 627px;
-  left: 38rem;
-
+  height: 4.5%;
+  width: 14.5%;
+  top: 85.5%;
+  left: 39.8%;
   cursor: pointer;
 }
 .buttonRIGHT {
   position: absolute;
-  height: 35px;
-  width: 220px;
-  top: 627px;
-  right: 30rem;
-
+  height: 4.5%;
+  width: 14%;
+  top: 85.5%;
+  right: 30.3%;
   cursor: pointer;
 }
 
 .buttonStop {
   position: absolute;
-  height: 35px;
-  width: 70px;
-  top: 627px;
-  right: 25rem;
-
+  height: 4.5%;
+  width: 5.5%;
+  top: 85.5%;
+  right: 24%;
   cursor: pointer;
 }
 
 .canvas {
   position: absolute;
-  border-radius: 66px;
-  top: 58px;
-  right: 19.2rem;
+  border-radius: 13%;
+  top: 4.7%;
+  right: 16.4%;
+  width: 60%;
+  height: 80%;
   z-index: 0;
-  /* background: #000; */
 }
 
 .button {
   font-family: 'Press Start 2P', sans-serif;
 
+  font-size: 1vw;
   content: '';
   position: absolute;
   display: none;
   color: white;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 13%;
   border: 1px solid azure;
 
-  padding: 20px;
-  top: 398px;
+  padding: 2%;
+  top: 55%;
   z-index: 1;
 }
 .button:hover {

@@ -22,8 +22,8 @@ export default class View {
 
     this.playfieldX = 0;
     this.playfieldY = 0;
-    this.playfieldWidth = (this.width * 332) / 374;
-    this.playfieldHeight = (this.height * 82.6) / 107;
+    this.playfieldWidth = (this.width * 329) / 374;
+    this.playfieldHeight = (this.height * 80.4) / 107;
 
     this.blockWidth = this.playfieldWidth / columns;
     this.blockHeight = this.playfieldHeight / rows;
@@ -36,7 +36,7 @@ export default class View {
     this.panelUpHeight = (this.height * 30) / 107;
     this.panelRightWidth = (this.width * 45) / 374;
     this.panelRightHeight = this.height;
-    this.blockNextWidth = this.panelRightWidth / 5.8;
+    this.blockNextWidth = this.panelRightWidth / 5.6;
     this.blockNextHeight = this.panelRightHeight / 26;
     this.element.appendChild(this.canvas);
   }
@@ -159,7 +159,7 @@ export default class View {
       this.panelUpX + 255,
       this.panelUpY + 68
     );
-    this.context.fillText(`Next`, this.panelRightX + 8, this.panelRightY + 160);
+    this.context.fillText(`Next`, this.panelRightX, this.panelRightY + 160);
 
     for (let y = 0; y < nextPiece.blocks.length; y++) {
       for (let x = 0; x < nextPiece.blocks[y].length; x++) {
@@ -167,7 +167,7 @@ export default class View {
 
         if (block) {
           this.renderBlock(
-            this.panelRightX + x * this.blockNextWidth + 2,
+            this.panelRightX + x * this.blockNextWidth - 3.8,
             this.panelRightY + 170 + y * this.blockNextHeight,
             this.blockNextWidth,
             this.blockNextHeight,
